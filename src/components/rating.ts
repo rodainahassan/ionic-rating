@@ -9,7 +9,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 
 @Component({
   selector: "rating",
-  templateUrl: "rating.html",
+  templateUrl: "./rating.html",
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
