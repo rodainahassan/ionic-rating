@@ -11,11 +11,13 @@
   "private": false,
   "license": "MIT",
   "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "ionic-app-scripts serve",
-    "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build",
-    "lint": "ionic-app-scripts lint"
+    "ngc": "ngc",
+    "build": "rm -rf dist && npm run ngc",
+    "publishPackage": "npm run build && npm publish"
   },
   "keywords": [
     "Ionic",
