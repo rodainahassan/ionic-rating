@@ -1,0 +1,13 @@
+rating {
+  [ion-button][disabled] {
+    opacity: 1;
+  }
+
+  ion-icon {
+    color: gray;
+
+    &.filled {
+      color: orange;
+    }
+  }
+}
