@@ -25,10 +25,10 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 
       ion-icon {
         color: gray;
+      }
 
-        &.filled {
-          color: orange;
-        }
+      ion-icon.filled {
+        color: orange;
       }
     `
   ],
