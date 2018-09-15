@@ -72,15 +72,16 @@ Include the component on page template, like the example below:
 </rating>
 ```
 
-[(ngmodel)]: ```HTML
+[(ngModel)]: 
 
+```HTML
 <rating [(ngModel)]="rate"
-readonly="false" <!--default value-->
-small="false" <!--default value-->
-(ngModelChange)="onModelChange($event)">
+        readonly="false" <!--default value-->
+        small="false" <!--default value-->
+        (ngModelChange)="onModelChange($event)">
 </rating>
-
 ````
+
 Reactive Forms:
 
 ```HTML
