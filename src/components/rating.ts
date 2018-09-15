@@ -19,17 +19,15 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
   `,
   styles: [
     `
-      rating {
-        [ion-button][disabled] {
-          opacity: 1;
-        }
+      [ion-button][disabled] {
+        opacity: 1;
+      }
 
-        ion-icon {
-          color: gray;
+      ion-icon {
+        color: gray;
 
-          &.filled {
-            color: orange;
-          }
+        &.filled {
+          color: orange;
         }
       }
     `
