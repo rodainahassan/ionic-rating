@@ -29,7 +29,7 @@
     "Stars",
     "Component"
   ],
-  "dependencies": {
+  "devDependencies": {
     "@angular/common": "5.2.11",
     "@angular/compiler": "5.2.11",
     "@angular/compiler-cli": "5.2.11",
@@ -40,10 +40,7 @@
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
     "rxjs": "5.5.11",
-    "zone.js": "0.8.26"
-  },
-  "devDependencies": {
-    "@ionic/app-scripts": "3.2.0",
+    "zone.js": "0.8.26",
     "typescript": "~2.6.2"
   }
 }
