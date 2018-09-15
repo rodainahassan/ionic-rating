@@ -64,7 +64,7 @@ export class ProfilePageModule { }
 
 Include the component on page template, like the example below:
 
-```HTML
+```
 <rating [rate]="rate"
         readonly="false" <!--default value-->
         small="false" <!--default value-->
@@ -72,19 +72,18 @@ Include the component on page template, like the example below:
 </rating>
 ```
 
-[(ngModel)]: 
+[(ngmodel)]: ```
 
-```HTML
 <rating [(ngModel)]="rate"
-        readonly="false" <!--default value-->
-        small="false" <!--default value-->
-        (ngModelChange)="onModelChange($event)">
+readonly="false" <!--default value-->
+small="false" <!--default value-->
+(ngModelChange)="onModelChange($event)">
 </rating>
-````
 
+````
 Reactive Forms:
 
-```HTML
+```
 <rating formControlName="rate"
         readonly="false" <!--default value-->
         small="false" <!--default value-->
@@ -93,7 +92,7 @@ Reactive Forms:
 
 ### You may also need to customize component styles:
 
-```SCSS
+```
 rating {
   ion-icon {
     color: gray;
