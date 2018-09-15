@@ -9,7 +9,31 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 
 @Component({
   selector: "rating",
-  templateUrl: "./rating.html",
+  template: `
+    <ion-buttons>
+      <button type="button" [disabled]="readonly" ion-button icon-only clear [small]="small" *ngFor="let current of [1, 2, 3, 4, 5]; let i = index"
+        (click)="onClick(i + 1)" (mouseover)="hoverRate = i + 1" (mouseleave)="hoverRate = 0">
+        <ion-icon name="star" [class.filled]="(i + 1 <= hoverRate || (!hoverRate && i + 1 <= rate))"></ion-icon>
+      </button>
+    </ion-buttons>
+  `,
+  styles: [
+    `
+      rating {
+        [ion-button][disabled] {
+          opacity: 1;
+        }
+
+        ion-icon {
+          color: gray;
+
+          &.filled {
+            color: orange;
+          }
+        }
+      }
+    `
+  ],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
