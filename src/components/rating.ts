@@ -19,6 +19,11 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
   `,
   styles: [
     `
+      ion-buttons {
+        display: flex;
+        justify-content: center;
+      }
+
       [ion-button][disabled] {
         opacity: 1;
       }
