@@ -17,7 +17,7 @@ var RatingComponent = /** @class */ (function () {
     RatingComponent.prototype.onClick = function (rate) {
         this.rate = rate;
         this.rateChange.emit(this.rate);
-        this.propagateChange(this.rate);
+        this._onChange(this.rate);
     };
     RatingComponent.prototype.writeValue = function (value) {
         if (value !== undefined) {
@@ -25,7 +25,7 @@ var RatingComponent = /** @class */ (function () {
         }
     };
     RatingComponent.prototype.registerOnChange = function (fn) {
-        this.propagateChange = fn;
+        this._onChange = fn;
     };
     RatingComponent.prototype.registerOnTouched = function (fn) { };
     RatingComponent.prototype.setDisabledState = function (isDisabled) {

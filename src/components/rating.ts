@@ -50,12 +50,12 @@ export class RatingComponent implements ControlValueAccessor {
   @Output()
   rateChange: EventEmitter<number> = new EventEmitter();
   hoverRate: number;
-  propagateChange: Function;
+  _onChange: Function;
 
   onClick(rate) {
     this.rate = rate;
     this.rateChange.emit(this.rate);
-    this.propagateChange(this.rate);
+    this._onChange(this.rate);
   }
 
   writeValue(value: any): void {
@@ -64,8 +64,8 @@ export class RatingComponent implements ControlValueAccessor {
     }
   }
 
-  registerOnChange(fn: any): void {
-    this.propagateChange = fn;
+  registerOnChange(fn: (_: any) => void): void {
+    this._onChange = fn;
   }
 
   registerOnTouched(fn: any): void {}
