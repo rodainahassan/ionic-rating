@@ -7,13 +7,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { IonicModule } from "@ionic/angular";
+import { CommonModule } from '@angular/common';
 import { RatingComponent } from "./components/rating";
 var IonicRatingModule = /** @class */ (function () {
     function IonicRatingModule() {
     }
     IonicRatingModule = __decorate([
         NgModule({
-            imports: [IonicModule, FormsModule],
+            imports: [IonicModule, CommonModule, FormsModule],
             exports: [RatingComponent],
             declarations: [RatingComponent]
         })

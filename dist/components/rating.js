@@ -42,8 +42,8 @@ var RatingComponent = /** @class */ (function () {
     ], RatingComponent.prototype, "readonly", void 0);
     __decorate([
         Input(),
-        __metadata("design:type", Boolean)
-    ], RatingComponent.prototype, "small", void 0);
+        __metadata("design:type", String)
+    ], RatingComponent.prototype, "size", void 0);
     __decorate([
         Output(),
         __metadata("design:type", EventEmitter)
@@ -51,7 +51,7 @@ var RatingComponent = /** @class */ (function () {
     RatingComponent = RatingComponent_1 = __decorate([
         Component({
             selector: "rating",
-            template: "\n    <ion-buttons>\n      <ion-button type=\"button\" [disabled]=\"readonly\" fill=\"clear\" [small]=\"small\" *ngFor=\"let current of [1, 2, 3, 4, 5]; let i = index\"\n        (click)=\"onClick(i + 1)\" (mouseover)=\"hoverRate = i + 1\" (mouseleave)=\"hoverRate = 0\">\n        <ion-icon slot=\"icon-only\" name=\"star\" [class.filled]=\"(i + 1 <= hoverRate || (!hoverRate && i + 1 <= rate))\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  ",
+            template: "\n    <ion-buttons>\n      <ion-button [disabled]=\"readonly\" fill=\"clear\" [size]=\"size\" *ngFor=\"let current of [1, 2, 3, 4, 5]; let i = index\"\n        (click)=\"onClick(i + 1)\" (mouseover)=\"hoverRate = i + 1\" (mouseleave)=\"hoverRate = 0\">\n        <ion-icon slot=\"icon-only\" name=\"star\" [class.filled]=\"(i + 1 <= hoverRate || (!hoverRate && i + 1 <= rate))\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  ",
             styles: [
                 "\n      [ion-button][disabled] {\n        opacity: 1;\n      }\n\n      ion-icon {\n        color: gray;\n      }\n\n      ion-icon.filled {\n        color: orange;\n      }\n    "
             ],

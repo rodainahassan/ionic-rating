@@ -3,7 +3,7 @@ import { ControlValueAccessor } from "@angular/forms";
 export declare class RatingComponent implements ControlValueAccessor {
     rate: number;
     readonly: boolean;
-    small: boolean;
+    size: string;
     rateChange: EventEmitter<number>;
     hoverRate: number;
     propagateChange: Function;

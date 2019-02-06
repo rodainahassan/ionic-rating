@@ -11,7 +11,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
   selector: "rating",
   template: `
     <ion-buttons>
-      <ion-button type="button" [disabled]="readonly" fill="clear" [small]="small" *ngFor="let current of [1, 2, 3, 4, 5]; let i = index"
+      <ion-button [disabled]="readonly" fill="clear" [size]="size" *ngFor="let current of [1, 2, 3, 4, 5]; let i = index"
         (click)="onClick(i + 1)" (mouseover)="hoverRate = i + 1" (mouseleave)="hoverRate = 0">
         <ion-icon slot="icon-only" name="star" [class.filled]="(i + 1 <= hoverRate || (!hoverRate && i + 1 <= rate))"></ion-icon>
       </ion-button>
@@ -46,7 +46,7 @@ export class RatingComponent implements ControlValueAccessor {
   @Input()
   readonly: boolean;
   @Input()
-  small: boolean;
+  size: string;
   @Output()
   rateChange: EventEmitter<number> = new EventEmitter();
   hoverRate: number;
