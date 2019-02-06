@@ -46,7 +46,7 @@ export class RatingComponent implements ControlValueAccessor {
   @Input()
   readonly: boolean;
   @Input()
-  size: string;
+  size: string = 'default';
   @Output()
   rateChange: EventEmitter<number> = new EventEmitter();
   hoverRate: number;

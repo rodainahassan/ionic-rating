@@ -1,10 +1,10 @@
-# ionic-rating
+# ionic4-rating
 
-A native Ionic 3+ rating stars component.
+A native Ionic 4 rating stars component forked from [ionic-rating](https://www.npmjs.com/package/ionic-rating) to support new Ionic 4 components.
 
 ## How to install?
 
-`npm i -S ionic-rating`
+`npm i ionic4-rating`
 
 ## How to use:
 
@@ -67,7 +67,7 @@ Include the component on page template, like the example below:
 ```
 <rating [rate]="rate"
         readonly="false" <!--default value-->
-        small="false" <!--default value-->
+        size="default" <!--default value-->
         (rateChange)="onRateChange($event)">
 </rating>
 ```
@@ -77,7 +77,7 @@ Include the component on page template, like the example below:
 ```
 <rating [(ngModel)]="rate"
         readonly="false" <!--default value-->
-        small="false" <!--default value-->
+        size="default" <!--default value-->
         (ngModelChange)="onModelChange($event)">
 </rating>
 ````
@@ -87,7 +87,7 @@ Reactive Forms:
 ```
 <rating formControlName="rate"
         readonly="false" <!--default value-->
-        small="false" <!--default value-->
+        size="default" <!--default value-->
 </rating>
 ````
 
@@ -105,4 +105,5 @@ rating {
 }
 ```
 
-&#9400; Rodaina Mohamed 2018
+&#9400; Rodaina Mohamed 2018  
+Updated by Lincon Dias 2019 to Ionic 4
