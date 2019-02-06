@@ -11,10 +11,10 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
   selector: "rating",
   template: `
     <ion-buttons>
-      <button type="button" [disabled]="readonly" ion-button icon-only clear [small]="small" *ngFor="let current of [1, 2, 3, 4, 5]; let i = index"
+      <ion-button type="button" [disabled]="readonly" fill="clear" [small]="small" *ngFor="let current of [1, 2, 3, 4, 5]; let i = index"
         (click)="onClick(i + 1)" (mouseover)="hoverRate = i + 1" (mouseleave)="hoverRate = 0">
-        <ion-icon name="star" [class.filled]="(i + 1 <= hoverRate || (!hoverRate && i + 1 <= rate))"></ion-icon>
-      </button>
+        <ion-icon slot="icon-only" name="star" [class.filled]="(i + 1 <= hoverRate || (!hoverRate && i + 1 <= rate))"></ion-icon>
+      </ion-button>
     </ion-buttons>
   `,
   styles: [

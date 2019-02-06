@@ -30,17 +30,20 @@
     "Component"
   ],
   "devDependencies": {
-    "@angular/common": "5.2.11",
-    "@angular/compiler": "5.2.11",
-    "@angular/compiler-cli": "5.2.11",
-    "@angular/core": "5.2.11",
-    "@angular/forms": "5.2.11",
-    "@angular/platform-browser": "5.2.11",
-    "@angular/platform-browser-dynamic": "5.2.11",
-    "ionic-angular": "3.9.2",
+    "@angular-devkit/core": "^7.2.1",
+    "@angular-devkit/schematics": "^7.2.1",
+    "@angular/common": "^7.2.1",
+    "@angular/compiler": "^7.2.1",
+    "@angular/compiler-cli": "^7.2.1",
+    "@angular/core": "^7.2.1",
+    "@angular/forms": "^7.2.1",
+    "@angular/platform-browser": "^7.2.1",
+    "@angular/platform-browser-dynamic": "^7.2.1",
+    "@angular/router": "^7.2.1",
+    "@ionic/angular": "^4.0.1",
     "ionicons": "3.0.0",
-    "rxjs": "5.5.11",
-    "zone.js": "0.8.26",
-    "typescript": "~2.6.2"
+    "rxjs": "^6.4.0",
+    "typescript": "^3.1.1",
+    "zone.js": "^0.8.26"
   }
 }
