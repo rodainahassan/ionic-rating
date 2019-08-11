@@ -25,3 +25,4 @@
 
 - Ionic 3 support has been dropped in favor of Ionic 4.
 - If you use Ionic 3, then you have to install the latest v1.x.x of the library.
+- Component name renamed from rating to ion-rating.
