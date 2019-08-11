@@ -16,4 +16,8 @@ ion-button {
     --color-focused: var(--star-color-filled);
     --color-activated: var(--star-color-filled);
   }
+
+  &.readonly {
+    --opacity: 1;
+  }
 }

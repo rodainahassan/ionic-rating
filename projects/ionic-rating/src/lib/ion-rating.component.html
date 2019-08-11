@@ -1,5 +1,6 @@
 <ion-button *ngFor="let i of [1, 2, 3, 4, 5]" type="button" fill="clear" [disabled]="disabled || readonly"
-  (mouseenter)="onMouseEnter(i)" (click)="onClick(i)" [class.filled]="i <= hoverRate || (!hoverRate && i <= rate)">
+  (mouseenter)="onMouseEnter(i)" (click)="onClick(i)" [class.filled]="i <= hoverRate || (!hoverRate && i <= rate)"
+  [class.readonly]="readonly">
   <ion-icon slot="icon-only" name="star" [size]="size">
   </ion-icon>
 </ion-button>

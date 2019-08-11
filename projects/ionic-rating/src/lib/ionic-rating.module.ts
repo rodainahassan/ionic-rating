@@ -1,10 +1,10 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { IonRatingComponent } from "./components/ion-rating/ion-rating.component";
+import { IonRatingComponent } from './ion-rating.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule],

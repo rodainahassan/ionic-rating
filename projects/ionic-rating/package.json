@@ -1,0 +1,31 @@
+{
+  "name": "ionic-rating",
+  "version": "2.0.0",
+  "description": "A simple Ionic 4 stars rating component using Angular, with an easy API and support for all methods of binding (Property and Event Binding, Template Forms and Reactive Forms).",
+  "author": "Rodaina Mohamed",
+  "license": "MIT",
+  "homepage": "https://github.com/RodainaMohamed/ionic-rating#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodainaMohamed/ionic-rating.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RodainaMohamed/ionic-rating/issues"
+  },
+  "keywords": [
+    "Ionic",
+    "Ionic 2",
+    "Ionic 3",
+    "Ionic 4",
+    "Angular",
+    "Rating",
+    "Stars",
+    "Component"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^8.1.0",
+    "@angular/core": "^8.1.0",
+    "@angular/forms": "^8.1.0",
+    "@ionic/angular": "^4.7.0"
+  }
+}
