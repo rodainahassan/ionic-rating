@@ -111,8 +111,8 @@ Reactive Forms:
 
 ```
 ion-rating {
-  --color: gray;
-  --color-filled: green;
+  --star-color: gray;
+  --star-color-filled: green;
 }
 ```
 
