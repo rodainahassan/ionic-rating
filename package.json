@@ -2,7 +2,7 @@
   "name": "ionic-rating",
   "version": "1.0.6",
   "author": "Rodaina Mohamed",
-  "description": "A native Ionic 3+ rating stars component.",
+  "description": "A simple Ionic 4 stars rating component using Angular, with an easy API and support for all methods of binding (Property and Event Binding, Template Forms and Reactive Forms).",
   "homepage": "https://github.com/RodainaMohamed/ionic-rating",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "scripts": {
     "ngc": "ngc",
     "build": "rm -rf dist && npm run ngc",
-    "publishPackage": "npm run build && npm publish"
+    "publish": "npm run build && npm publish"
   },
   "keywords": [
     "Ionic",
@@ -30,17 +30,36 @@
     "Component"
   ],
   "devDependencies": {
-    "@angular/common": "5.2.11",
-    "@angular/compiler": "5.2.11",
-    "@angular/compiler-cli": "5.2.11",
-    "@angular/core": "5.2.11",
-    "@angular/forms": "5.2.11",
-    "@angular/platform-browser": "5.2.11",
-    "@angular/platform-browser-dynamic": "5.2.11",
-    "ionic-angular": "3.9.2",
-    "ionicons": "3.0.0",
-    "rxjs": "5.5.11",
-    "zone.js": "0.8.26",
-    "typescript": "~2.6.2"
+    "@angular-devkit/architect": "^0.802.1",
+    "@angular-devkit/build-angular": "^0.802.1",
+    "@angular-devkit/core": "^8.2.1",
+    "@angular-devkit/schematics": "^8.2.1",
+    "@angular/cli": "^8.2.1",
+    "@angular/compiler": "~8.2.1",
+    "@angular/compiler-cli": "~8.2.1",
+    "@angular/language-service": "~8.2.1",
+    "@ionic/angular-toolkit": "^2.0.0",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~12.0.0",
+    "codelyzer": "~4.5.0",
+    "ionic": "^5.2.4",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~1.1.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.4.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~5.17.0",
+    "typescript": "~3.5.3"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@angular/common": "^8.1.0",
+    "@angular/core": "^8.1.0",
+    "@ionic/angular": "^4.7.0"
   }
 }

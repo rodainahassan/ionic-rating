@@ -1,0 +1,19 @@
+:host {
+  --star-color: gray;
+  --star-color-filled: orange;
+  display: inline-block;
+}
+
+ion-button {
+  --padding-start: 0;
+  --padding-end: 0;
+  --color: var(--star-color);
+  --color-focused: var(--star-color);
+  --color-activated: var(--star-color);
+
+  &.filled {
+    --color: var(--star-color-filled);
+    --color-focused: var(--star-color-filled);
+    --color-activated: var(--star-color-filled);
+  }
+}
