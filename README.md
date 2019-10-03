@@ -67,7 +67,7 @@ Include the component on page template, like the example below:
 
 ```
 <ion-rating [rate]="rate"
-        readonly="false" <!--default value-->
+        [readonly]="false" <!--default value-->
         size="default" <!--default value-->
         (rateChange)="onRateChange($event)">
 </ion-rating>
@@ -77,7 +77,7 @@ Template Forms:
 
 ```
 <ion-rating [(ngModel)]="rate"
-        readonly="false" <!--default value-->
+        [readonly]="false" <!--default value-->
         size="default" <!--default value-->
         (ngModelChange)="onModelChange($event)">
 </ion-rating>
@@ -87,7 +87,7 @@ Reactive Forms:
 
 ```
 <ion-rating formControlName="rate"
-        readonly="false" <!--default value-->
+        [readonly]="false" <!--default value-->
         size="default" <!--default value-->
 </ion-rating>
 ```
