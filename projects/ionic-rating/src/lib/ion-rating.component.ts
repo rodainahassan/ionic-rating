@@ -29,7 +29,7 @@ export class IonRatingComponent implements ControlValueAccessor, OnChanges {
   @Input() rate: number;
   @Input() readonly: boolean;
   @Input() resettable: boolean;
-  @Input() size: boolean;
+  @Input() size: string;
   @Output() hover = new EventEmitter<number>();
   @Output() leave = new EventEmitter<number>();
   @Output() rateChange = new EventEmitter<number>();
